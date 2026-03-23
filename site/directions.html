@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clinic Directions - St Mary's Clinic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        'primary-dark': '#0284c7',
+                        secondary: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 font-sans">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="text-3xl">🏥</span>
+                <span class="text-xl font-bold text-primary">St Mary's Clinic</span>
+            </a>
+            <nav>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-bold uppercase tracking-wider">
+                    <li><a href="index.html" class="text-slate-600 hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="directions.html" class="text-primary transition-colors">Directions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="min-h-screen bg-slate-50 py-16">
+        <div class="container mx-auto px-4 max-w-4xl text-center italic">
+            <h1 class="text-4xl font-bold text-slate-900 mb-8 italic">Internal Clinic Directions</h1>
+            <p class="text-slate-500 mb-12 italic">Find your way through our facility at 1 Hospital Road.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16 italic">
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-primary">
+                    <div class="text-4xl mb-4 italic">🏢</div>
+                    <h3 class="text-xl font-bold mb-2 italic text-slate-900">Reception</h3>
+                    <p class="text-slate-600 text-sm italic">Ground Floor, Main Entrance. Check-in here.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-secondary">
+                    <div class="text-4xl mb-4 italic">🩺</div>
+                    <h3 class="text-xl font-bold mb-2 italic text-slate-900">Consultations</h3>
+                    <p class="text-slate-600 text-sm italic">1st Floor, follow the blue floor markings.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-orange-500">
+                    <div class="text-4xl mb-4 italic">💊</div>
+                    <h3 class="text-xl font-bold mb-2 italic text-slate-900">Pharmacy</h3>
+                    <p class="text-slate-600 text-sm italic">Ground Floor, Wing B. Next to the exit.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-red-500">
+                    <div class="text-4xl mb-4 italic">🧪</div>
+                    <h3 class="text-xl font-bold mb-2 italic text-slate-900">Lab</h3>
+                    <p class="text-slate-600 text-sm italic">Basement Level. Accessible via elevator.</p>
+                </div>
+            </div>
+
+            <div class="bg-white p-12 rounded-3xl shadow-md border italic">
+                <h2 class="text-2xl font-bold text-slate-900 mb-4 italic">Facility Map Overview</h2>
+                <div class="bg-slate-50 border-2 border-dashed h-64 flex items-center justify-center text-slate-400 italic">
+                    Map Layout Graphic Placeholder
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-white py-8 text-center text-sm">
+        <p>&copy; 2026 St Mary's Clinic CRM System.</p>
+    </footer>
+</body>
+</html>

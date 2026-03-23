@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - St Mary's Clinic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        'primary-dark': '#0284c7',
+                        secondary: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 font-sans">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="text-3xl">🏥</span>
+                <span class="text-xl font-bold text-primary">St Mary's Clinic</span>
+            </a>
+            <nav>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-bold uppercase tracking-wider">
+                    <li><a href="index.html" class="text-slate-600 hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="contact.html" class="text-primary transition-colors">Contact</a></li>
+                    <li><a href="login.html" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-primary-dark transition-all font-bold">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="min-h-screen bg-slate-50 py-16">
+        <div class="container mx-auto px-4 max-w-6xl">
+            <h1 class="text-4xl font-bold text-slate-900 mb-8 text-center">Get in Touch</h1>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="bg-white p-8 rounded-2xl shadow-md space-y-6">
+                        <h2 class="text-2xl font-bold text-primary mb-6 italic">Clinic Info</h2>
+                        <div class="flex items-start gap-4 italic">
+                            <div class="text-2xl text-primary">📍</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm uppercase italic">Address</h3>
+                                <p class="text-slate-600 italic">1 Hospital Road, Marianhill, Pinetown 3605</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4 italic">
+                            <div class="text-2xl text-primary">📞</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900 text-sm uppercase italic">Phones</h3>
+                                <p class="text-slate-600 italic">(555) 123-4567</p>
+                                <p class="text-red-600 font-bold italic">Emergency: (555) 911-0000</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-blue-100 h-64 rounded-2xl flex items-center justify-center italic text-blue-900 font-bold">
+                        Interactive Map View Placeholder
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-md">
+                    <h2 class="text-2xl font-bold text-slate-900 mb-6 italic">Send Message</h2>
+                    <form class="space-y-6 italic">
+                        <input type="text" class="w-full p-3 border rounded-lg" placeholder="Your Name">
+                        <input type="email" class="w-full p-3 border rounded-lg" placeholder="Email Address">
+                        <textarea class="w-full p-3 border rounded-lg h-40" placeholder="How can we help?"></textarea>
+                        <button class="w-full bg-primary text-white py-4 rounded-xl font-bold">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-white py-8 text-center text-sm">
+        <p>&copy; 2026 St Mary's Clinic CRM System.</p>
+    </footer>
+    <script src="chatbot.js"></script>
+</body>
+</html>

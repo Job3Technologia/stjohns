@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ & Feedback - St Mary's Clinic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        'primary-dark': '#0284c7',
+                        secondary: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 font-sans">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="text-3xl">🏥</span>
+                <span class="text-xl font-bold text-primary">St Mary's Clinic</span>
+            </a>
+            <nav>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-bold uppercase tracking-wider">
+                    <li><a href="index.html" class="text-slate-600 hover:text-primary transition-colors">Home</a></li>
+                    <li><a href="faq.html" class="text-primary transition-colors">FAQ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="min-h-screen bg-slate-50 py-16">
+        <div class="container mx-auto px-4 max-w-4xl">
+            <h1 class="text-4xl font-bold text-slate-900 mb-8 text-center italic">FAQ & Feedback</h1>
+            
+            <div class="bg-white p-10 rounded-2xl shadow-md space-y-8 mb-12">
+                <h2 class="text-2xl font-bold text-primary mb-6 italic">Common Questions</h2>
+                <div class="space-y-4">
+                    <details class="group border rounded-xl overflow-hidden">
+                        <summary class="p-4 bg-slate-50 font-bold cursor-pointer group-open:bg-primary group-open:text-white transition-all italic">What are the clinic hours?</summary>
+                        <div class="p-4 text-slate-600 italic">Mon-Fri: 08:00 - 18:00. Emergency 24/7.</div>
+                    </details>
+                    <details class="group border rounded-xl overflow-hidden">
+                        <summary class="p-4 bg-slate-50 font-bold cursor-pointer group-open:bg-primary group-open:text-white transition-all italic">How do I get my medicine delivered?</summary>
+                        <div class="p-4 text-slate-600 italic">Request delivery via the patient portal or call us. Free for elderly/disabled.</div>
+                    </details>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 p-8 rounded-2xl border border-blue-100 italic">
+                <h2 class="text-2xl font-bold text-blue-900 mb-4">Patient Satisfaction</h2>
+                <form class="space-y-6">
+                    <textarea class="w-full p-4 border rounded-xl h-32" placeholder="Your feedback..."></textarea>
+                    <button class="bg-primary text-white px-8 py-3 rounded-xl font-bold">Submit Feedback</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-white py-8 text-center text-sm">
+        <p>&copy; 2026 St Mary's Clinic CRM System.</p>
+    </footer>
+</body>
+</html>

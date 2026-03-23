@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - St Mary's Clinic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        'primary-dark': '#0284c7',
+                        secondary: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-100 font-sans flex items-center justify-center min-h-screen p-4">
+    <div class="max-w-lg w-full bg-white p-12 rounded-3xl shadow-2xl border border-slate-100">
+        <div class="text-center mb-10">
+            <div class="text-5xl mb-4">👶</div>
+            <h1 class="text-3xl font-black text-slate-900 uppercase tracking-tighter italic">Join St Mary's</h1>
+            <p class="text-slate-400 font-bold uppercase text-[10px] tracking-widest mt-2">Create your patient profile</p>
+        </div>
+
+        <form id="registerForm" class="space-y-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="md:col-span-2">
+                <label class="block text-xs font-black uppercase text-slate-500 mb-2 tracking-widest">Full Name</label>
+                <input type="text" required class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:bg-white transition-all outline-none" placeholder="Enter your full name">
+            </div>
+            
+            <div class="md:col-span-2">
+                <label class="block text-xs font-black uppercase text-slate-500 mb-2 tracking-widest">Email Address</label>
+                <input type="email" required class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:bg-white transition-all outline-none" placeholder="name@example.com">
+            </div>
+
+            <div>
+                <label class="block text-xs font-black uppercase text-slate-500 mb-2 tracking-widest">Phone Number</label>
+                <input type="text" required class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:bg-white transition-all outline-none" placeholder="081 234 5678">
+            </div>
+
+            <div>
+                <label class="block text-xs font-black uppercase text-slate-500 mb-2 tracking-widest">Date of Birth</label>
+                <input type="date" required class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:bg-white transition-all outline-none">
+            </div>
+
+            <div>
+                <label class="block text-xs font-black uppercase text-slate-500 mb-2 tracking-widest">Create Password</label>
+                <input type="password" required class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:bg-white transition-all outline-none" placeholder="••••••••">
+            </div>
+
+            <div>
+                <label class="block text-xs font-black uppercase text-slate-500 mb-2 tracking-widest">Confirm Password</label>
+                <input type="password" required class="w-full p-4 bg-slate-50 border-2 border-slate-100 rounded-2xl focus:border-primary focus:bg-white transition-all outline-none" placeholder="••••••••">
+            </div>
+            
+            <div class="md:col-span-2 py-4">
+                <label class="flex items-center gap-2 cursor-pointer font-bold text-slate-500 text-sm">
+                    <input type="checkbox" required class="w-4 h-4 accent-primary"> I agree to the <a href="#" class="text-primary hover:underline">Terms of Healthcare Service</a>
+                </label>
+            </div>
+
+            <button type="submit" class="md:col-span-2 w-full py-5 bg-primary text-white rounded-2xl font-black uppercase tracking-widest shadow-lg shadow-blue-200 hover:bg-primary-dark hover:-translate-y-1 transition-all">
+                Create Account ✨
+            </button>
+        </form>
+
+        <div class="mt-8 pt-8 border-t text-center">
+            <p class="text-sm font-bold text-slate-400">
+                Already have an account? <a href="login.html" class="text-primary hover:underline">Sign in instead</a>
+            </p>
+            <div class="mt-4 flex justify-center gap-4 text-[10px] font-black uppercase tracking-widest">
+                <a href="index.html" class="text-slate-400 hover:text-slate-600">← Back to Website</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Profile created successfully! Please sign in to access your dashboard.');
+            window.location.href = 'login.html';
+        });
+    </script>
+</body>
+</html>

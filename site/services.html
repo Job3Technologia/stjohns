@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - St Mary's Clinic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0ea5e9',
+                        'primary-dark': '#0284c7',
+                        secondary: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 font-sans">
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2">
+                <span class="text-3xl">🏥</span>
+                <span class="text-xl font-bold text-primary">St Mary's Clinic</span>
+            </a>
+            <nav>
+                <ul class="hidden md:flex items-center gap-6 text-sm font-bold uppercase tracking-wider">
+                    <li><a href="index.html" class="text-slate-600">Home</a></li>
+                    <li><a href="services.html" class="text-primary">Services</a></li>
+                    <li><a href="login.html" class="bg-primary text-white px-4 py-2 rounded-lg text-xs font-bold uppercase">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="py-20 bg-white min-h-screen">
+        <div class="container mx-auto px-4">
+            <h1 class="text-4xl font-bold text-center mb-4 italic">Our Healthcare Services</h1>
+            <p class="text-center text-slate-500 mb-16 max-w-2xl mx-auto italic">Professional medical care at 1 Hospital Road, Marianhill.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 italic">
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="text-4xl mb-4">👶</div>
+                    <h3 class="text-xl font-bold mb-4 italic text-slate-900">Paediatrics</h3>
+                    <p class="text-slate-600 text-sm italic">Specialized care for infants and children, including routine checkups and vaccinations.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="text-4xl mb-4">🩺</div>
+                    <h3 class="text-xl font-bold mb-4 italic text-slate-900">GP Consultation</h3>
+                    <p class="text-slate-600 text-sm italic">General health assessments and primary medical services for the whole family.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="text-4xl mb-4">🧪</div>
+                    <h3 class="text-xl font-bold mb-4 italic text-slate-900">Diagnostic Lab</h3>
+                    <p class="text-slate-600 text-sm italic">Modern laboratory testing for blood work, pathology, and rapid diagnostic results.</p>
+                </div>
+                <div class="p-8 bg-slate-50 rounded-2xl border border-slate-100 hover:shadow-xl transition-all">
+                    <div class="text-4xl mb-4">🏥</div>
+                    <h3 class="text-xl font-bold mb-4 italic text-slate-900">Specialist Care</h3>
+                    <p class="text-slate-600 text-sm italic">Referral-based access to various medical specialists and chronic disease clinics.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-white py-8 text-center text-sm">
+        <p>&copy; 2026 St Mary's Clinic CRM System.</p>
+    </footer>
+    <script src="chatbot.js"></script>
+</body>
+</html>
